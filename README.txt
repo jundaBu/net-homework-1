@@ -5,7 +5,8 @@ run the client.py file on a separate terminal.
 After this in the terminal where you executed the client.py file it will prompt you to enter
 a display name to then be able to start writing the messages. 
 
-#**MESSAGE FLOW**
+# ** MESSAGE FLOW **
+
 The client wait for the user to enter the message. Then it first checks if the message is 
 "quit," if this is true the client stops. When this is false the client sends the message 
 to the server, the server then takes this message and echoes it back to the client, when 
