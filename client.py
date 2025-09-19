@@ -21,14 +21,12 @@ while True:
     if message.lower() == "quit":
         break
     
-    # Receive echoed message from server
-    try:
-        data = client_socket.recv(1024)
-        if data:
-            print("Received from server:", data.decode())
-        else:
-            break
-    except:
+    data = client_socket.recv(1024)
+    if data:
+        print("Received from server:", data.decode())
+    else:
         break
+
+        
 
 client_socket.close()
